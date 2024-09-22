@@ -1,72 +1,78 @@
-SimpleLang is a basic, high-level programming language designed to work with an 8-bit CPU architecture. Its primary goal is to provide a simple syntax for variable declarations, assignments, arithmetic operations, and conditionals without the complexity of loops or advanced control structures. Below are the design details of SimpleLang, including its syntax, semantics, and examples for each construct.
+# SimpleLang is a basic, high-level programming language designed to work with an 8-bit CPU architecture. Its primary goal is to provide a simple syntax for variable declarations, assignments, arithmetic operations, and conditionals without the complexity of loops or advanced control structures. Below are the design details of SimpleLang, including its syntax, semantics, and examples for each construct.
 
-1. Variable Declarations
+# 1. Variable Declarations
 Syntax:
-plaintext
-Copy code
+```
 int <variable_name>;
-Semantics:
+```
+## Semantics:
 The keyword int is used to declare an integer variable.
 Variables must be declared before they are used in assignments or expressions.
 Each variable can hold a single 8-bit integer (ranging from 0 to 255).
 Uninitialized variables are implicitly set to 0.
 Examples:
-plaintext
-Copy code
+```
 int a;
 int b;
 int result;
+```
+
 Explanation:
 The above code declares three variables: a, b, and result. Each variable can store a single integer.
-2. Assignment Statements
+# 2. Assignment Statements
 Syntax:
-plaintext
-Copy code
+```
 <variable_name> = <expression>;
+```
 Semantics:
 The assignment operator = is used to assign the result of an expression to a variable.
 The right-hand side (RHS) of the assignment can be either a constant, a variable, or an arithmetic expression.
 The left-hand side (LHS) must be a previously declared variable.
 The assignment operation stores the evaluated result of the expression into the variable on the LHS.
 Examples:
-plaintext
-Copy code
+```
 a = 10;
 b = a + 5;
 result = a + b - 2;
+```
 Explanation:
-a = 10; assigns the value 10 to the variable a.
-b = a + 5; assigns the value of a + 5 to the variable b. If a was 10, then b becomes 15.
+* a = 10; assigns the value 10 to the variable a.
+* b = a + 5; assigns the value of a + 5 to the variable b. If a was 10, then b becomes 15.
 result = a + b - 2; computes the value of a + b - 2 and stores the result in result.
-3. Arithmetic Operations
+
+# 3. Arithmetic Operations
 Syntax:
-plaintext
-Copy code
+```
 <variable_name> = <expression>;
+```
 Supported Operators:
+```
 Addition: +
 Subtraction: -
-Semantics:
-SimpleLang supports basic arithmetic operations: addition and subtraction.
+```
+
+>SimpleLang supports basic arithmetic operations: addition and subtraction.
 Expressions can involve variables, constants, or a combination of both.
 The result of the arithmetic expression is stored in the variable on the left-hand side.
+
 Examples:
-plaintext
-Copy code
+```
 c = a + b;
 d = a - 5;
 result = a + b - c;
+```
 Explanation:
-c = a + b; sums the values of a and b and stores the result in c.
-d = a - 5; subtracts 5 from a and stores the result in d.
-result = a + b - c; performs multiple operations in a single expression and stores the final result in result.
-4. Conditional Statements
+* c = a + b; sums the values of a and b and stores the result in c.
+* d = a - 5; subtracts 5 from a and stores the result in d.
+* result = a + b - c; performs multiple operations in a single expression and stores the final result in result.
+
+# 4. Conditional Statements
 Syntax:
-plaintext
-Copy code
+```
 if (<condition>) {
     <statements>
 }
+```
 Supported Conditions:
 Equality: ==
 Semantics:
