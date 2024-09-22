@@ -131,16 +131,17 @@ Compile your SimpleLang programs using the provided compiler.
 
 # 🛠️ Project Structure
 
-simplelang<br>
-├── lexer<br>
-│   |── lexer.c<br>
-├── parser<br>
-│   |── parser.c<br>
-├── codegen<br>
-│   |── codegen.c<br>
-├── examples<br>
-│   |── example_program.txt<br>
-|── README.md<br>
+simplelang/
+├── **lexer**
+│   └── lexer.c
+├── **parser**
+│   └── parser.c
+├── **codegen**
+│   └── codegen.c
+├── **examples**
+│   └── example_program.txt
+├── **README.md**
+└── **LICENSE**
 
 
 # 📅 Contributing
