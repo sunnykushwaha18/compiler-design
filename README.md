@@ -1,4 +1,4 @@
-# SimpleLang is a basic, high-level programming language designed to work with an 8-bit CPU architecture. Its primary goal is to provide a simple syntax for variable declarations, assignments, arithmetic operations, and conditionals without the complexity of loops or advanced control structures. Below are the design details of SimpleLang, including its syntax, semantics, and examples for each construct.
+### SimpleLang is a basic, high-level programming language designed to work with an 8-bit CPU architecture. Its primary goal is to provide a simple syntax for variable declarations, assignments, arithmetic operations, and conditionals without the complexity of loops or advanced control structures. Below are the design details of SimpleLang, including its syntax, semantics, and examples for each construct.
 
 # 1. Variable Declarations
 Syntax:
@@ -88,15 +88,17 @@ if (a == b) {
 }
 Explanation:
 The condition a == b checks if the values of a and b are equal. If true, the statement inside the braces (result = result + 1;) is executed.
-5. Complete Example Program in SimpleLang
-Here is a full example program that combines variable declarations, assignments, arithmetic operations, and conditionals:
 
-plaintext
-Copy code
+
+# 📜 Complete Example Program
+Here’s a full example program that combines variable declarations, assignments, arithmetic operations, and conditionals:
+
+```
 // Variable declaration
 int a;
 int b;
 int c;
+
 
 // Assignment
 a = 10;
@@ -107,21 +109,44 @@ c = a + b;
 if (c == 30) {
     c = c + 1;
 }
+```
 Explanation:
 Three integer variables a, b, and c are declared.
-The values 10 and 20 are assigned to a and b, respectively.
-The value of a + b (which is 30) is stored in c.
-The conditional statement checks if c == 30. Since this is true, the block inside the if statement is executed, and c is incremented by 1.
-Summary of Syntax
-Construct	Syntax	Example
-Variable Declaration	int <variable_name>;	int a;
-Assignment	<variable_name> = <expression>;	a = 10;
-Addition	<variable_name> = <var1> + <var2>;	c = a + b;
-Subtraction	<variable_name> = <var1> - <var2>;	d = a - 5;
-Conditional	if (<condition>) { <statements> }	if (a == b) { a = a + 1; }
-Semantics Summary
-Variables: Variables are declared with the keyword int and store 8-bit integer values.
-Assignments: Variables can be assigned values or expressions, evaluated at runtime.
-Arithmetic: Basic arithmetic operations (+, -) can be performed on variables and constants.
-Conditionals: The if statement allows conditional execution of code based on a comparison (only equality == is supported).
-This completes the syntax and semantics design for SimpleLang, a simple yet powerful language designed for 8-bit CPUs.
+Values are assigned and operations are performed.
+The conditional statement checks if c == 30, and if true, increments c by 1.
+
+# 🚀 Getting Started
+To get started with SimpleLang, follow these steps:
+
+Clone the repository:
+```
+git clone https://github.com/yourusername/simplelang.git'
+```
+
+Navigate to the project directory:
+```
+cd simplelang
+```
+Compile your SimpleLang programs using the provided compiler.
+# 🛠️ Project Structure
+Copy code
+simplelang/
+├── lexer/
+│   └── lexer.c
+├── parser/
+│   └── parser.c
+├── codegen/
+│   └── codegen.c
+├── examples/
+│   └── example_program.txt
+└── README.md
+# 📅 Contributing
+Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
+
+# 📧 Contact
+For any inquiries or questions, reach out to us at join-the-team@vicharak.in.
+
+# 🎉 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+# ✨ Dive into the world of programming with SimpleLang and unleash your creativity! Happy coding! ✨
