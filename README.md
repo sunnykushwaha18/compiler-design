@@ -128,18 +128,21 @@ Navigate to the project directory:
 cd simplelang
 ```
 Compile your SimpleLang programs using the provided compiler.
+
 # 🛠️ Project Structure
-Copy code
-simplelang/
-├── lexer/
-│   └── lexer.c
-├── parser/
-│   └── parser.c
-├── codegen/
-│   └── codegen.c
-├── examples/
-│   └── example_program.txt
-└── README.md
+
+simplelang
+├── lexer
+│   |── lexer.c
+├── parser
+│   |── parser.c
+├── codegen
+│   |── codegen.c
+├── examples
+│   |── example_program.txt
+|── README.md
+
+
 # 📅 Contributing
 Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
 
