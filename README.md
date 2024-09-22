@@ -130,7 +130,7 @@ cd simplelang
 Compile your SimpleLang programs using the provided compiler.
 
 # 🛠️ Project Structure
-
+```
 simplelang/
 ├── **lexer**
 │   └── lexer.c
@@ -142,7 +142,7 @@ simplelang/
 │   └── example_program.txt
 ├── **README.md**
 └── **LICENSE**
-
+```
 
 # 📅 Contributing
 Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
